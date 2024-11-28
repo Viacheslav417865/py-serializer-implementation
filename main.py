@@ -5,7 +5,7 @@ import json
 
 def serialize_car_object(car: Car) -> bytes:
     serializer = CarSerializer(car)
-    return json.dumps(serializer.data).encode('utf-8')
+    return json.dumps(serializer.data).encode("utf-8")
 
 
 def deserialize_car_object(car_json: str) -> Car:
